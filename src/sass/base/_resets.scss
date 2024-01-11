@@ -1,0 +1,42 @@
+.h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  
+}
+p{
+  line-height: 20.3px;
+}
+ul
+.h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  line-height: 27px;
+}
+ul{
+  list-style: none;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+  }
+ 
+  
