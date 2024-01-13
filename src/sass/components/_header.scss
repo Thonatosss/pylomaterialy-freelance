@@ -23,3 +23,45 @@
   align-items: center;
   gap: 10px;
 }
+
+.header-first-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-mess {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.header-mess-text {
+  margin-right: 10px;
+}
+.header-second-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.header-nav {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}
+.page-header {
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .page-header {
+    display: block;
+  }
+}

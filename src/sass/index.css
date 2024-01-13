@@ -242,6 +242,54 @@ body.menu-open {
   gap: 10px;
 }
 
+.header-first-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-mess {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.header-mess-text {
+  margin-right: 10px;
+}
+
+.header-second-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.header-nav {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.page-header {
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    display: block;
+  }
+}
 .hero-section {
   padding-top: 100px;
   background-image: url("/src/images/hero-background.jpg");
@@ -277,7 +325,6 @@ body.menu-open {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -285,7 +332,6 @@ body.menu-open {
 .hero-info-card {
   display: flex;
   align-items: center;
-  width: 135px;
 }
 
 .center-hero {
@@ -313,9 +359,71 @@ body.menu-open {
   width: 32px;
   height: 32px;
   margin-right: 8px;
-  font-size: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-text {
+    font-size: 14px;
+  }
+  .mt {
+    margin-top: 30px;
+  }
+  .hero-title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero-info-list .hero-list-item {
+    width: 50%; /* 2 картки в ряду */
+  }
+}
+/* Стилі для екранів шириною 1200 пікселів і більше */
+@media screen and (min-width: 1200px) {
+  .hero-info-list .hero-list-item {
+    width: 25%; /* 4 картки в ряду */
+  }
+  .hero-section {
+    padding-top: 150px;
+  }
+  .hero-title {
+    font-size: 42px;
+    line-height: 1.3;
+  }
+  .mt {
+    margin-top: 0;
+  }
+  .hero-info-list {
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 70px;
+  }
+  .hero-info-container {
+    width: 100%;
+  }
+  .hero-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero-text {
+    font-size: 20px;
+  }
+  .hero-info-img {
+    width: 40px;
+    height: 40px;
+  }
+  .hero-button {
+    width: 500px;
+    height: 90px;
+  }
+}
 .materials-section {
   padding-top: 50px;
 }
@@ -367,6 +475,18 @@ body.menu-open {
   font-size: 12px;
 }
 
+@media screen and (min-width: 768px) {
+  .product-card {
+    width: 48%;
+  }
+  .materials-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .order-btn {
+    width: 100%;
+  }
+}
 .form-container {
   /* width: 900px; */
   height: 100%;
@@ -492,7 +612,7 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 5px;
 }
 
 #stepCounter {
@@ -510,20 +630,19 @@ input[type=checkbox] {
 
 @media screen and (min-width: 768px) {
   .img-container {
-    width: 210px;
-    height: 155px;
+    width: 160px;
+    height: 135px;
   }
 }
 .quiz-img {
-  height: 90px;
-  width: 110px;
+  height: 80px;
+  width: 100px;
   border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) {
   .quiz-img {
-    width: 80%;
-    height: 130px;
+    width: 70%;
     height: 160px;
     border-radius: 4px;
   }
@@ -557,6 +676,9 @@ input[type=checkbox] {
 @media screen and (min-width: 768px) {
   .buttons-container {
     width: 370px;
+  }
+  .fd {
+    flex-direction: column;
   }
 }
 .range-input {
@@ -695,14 +817,6 @@ select:focus {
   padding: 10px;
 }
 
-.card-list {
-  gap: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .garant-card-container {
   margin-top: 15px;
 }
@@ -736,6 +850,28 @@ select:focus {
   padding-top: 8px;
 }
 
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-list {
+    flex-direction: initial;
+    flex-wrap: wrap;
+  }
+  .card-item {
+    width: 300px;
+  }
+}
 .quest-title {
   text-align: center;
   font-size: 22px;

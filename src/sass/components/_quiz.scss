@@ -114,7 +114,7 @@ input[type='checkbox'] {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 5px;
 }
 #stepCounter {
   font-size: 18px;
@@ -130,19 +130,19 @@ input[type='checkbox'] {
 }
 @media screen and (min-width: 768px) {
   .img-container {
-    width: 210px;
-    height: 155px;
+    width: 160px;
+    height: 135px;
   }
 }
 .quiz-img {
-  height: 90px;
-  width: 110px;
+  height: 80px;
+  width: 100px;
   border-radius: 4px;
 }
 @media screen and (min-width: 768px) {
   .quiz-img {
-    width: 80%;
-    height: 130px;
+    width: 70%;
+    // height: 130px;
     height: 160px;
     border-radius: 4px;
   }
@@ -174,6 +174,9 @@ input[type='checkbox'] {
 @media screen and (min-width: 768px) {
   .buttons-container {
     width: 370px;
+  }
+  .fd {
+    flex-direction: column;
   }
 }
 .range-input {
