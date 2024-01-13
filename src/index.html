@@ -30,12 +30,12 @@
         <div class="menu__overlay" id="menu__overlay"></div>
         <ul class="menu__box">
           <li><a class="menu__item" href="#hero">ГОЛОВНА</a></li>
-          <li><a class="menu__item" href="#proposals">ПИЛОМАТЕРІАЛИ</a></li>
-          <li><a class="menu__item" href="#service">ГАРАНТІЇ</a></li>
-          <li><a class="menu__item" href="#doctors">КОМАНДА</a></li>
-          <li><a class="menu__item" href="#photo">ВІДГУКИ</a></li>
-          <li><a class="menu__item" href="#contacts">ЕТАПИ РОБОТИ</a></li>
-          <li><a class="menu__item" href="#consult">КОНТАКТИ</a></li>
+          <li><a class="menu__item" href="#materials">ПИЛОМАТЕРІАЛИ</a></li>
+          <li><a class="menu__item" href="#garant">ГАРАНТІЇ</a></li>
+          <li>
+            <a class="menu__item" href="#quiz">РОЗРАХУВАТИ ВАРТІСТЬ</a>
+          </li>
+          <li><a class="menu__item" href="#contacts">КОНТАКТИ</a></li>
           <li>
             <div class="social-container menu__item">
               <p class="social-text">
@@ -43,9 +43,19 @@
                 <span class="social-light-text"> Задайте онлайн</span>
               </p>
               <ul class="social-list">
-                <li class="social-item"><img src="#" alt="" /></li>
-                <li class="social-item"><img src="#" alt="" /></li>
-                <li class="social-item"><img src="#" alt="" /></li>
+                <li class="social-item">
+                  <img class="social-icon" src="./images/viber.png" alt="" />
+                </li>
+                <li class="social-item">
+                  <img class="social-icon" src="./images/telegram.png" alt="" />
+                </li>
+                <li class="social-item">
+                  <img
+                    class="social-icon"
+                    src="./images/messenger.png"
+                    alt=""
+                  />
+                </li>
               </ul>
             </div>
           </li>
@@ -53,7 +63,7 @@
       </div>
     </div>
     <header></header>
-    <section class="hero-section">
+    <section class="hero-section" id="hero">
       <div class="container">
         <div class="center-hero">
           <h1 class="hero-title">
@@ -65,7 +75,11 @@
             <ul class="hero-info-list">
               <li class="hero-list-item">
                 <div class="hero-info-card">
-                  <img class="hero-info-img" src="#" alt="" />
+                  <img
+                    class="hero-info-img"
+                    src="./images/hero-icon.png"
+                    alt=""
+                  />
                   <p class="hero-text">
                     <span style="font-weight: 600">Рівна </span>
                     <br />
@@ -75,7 +89,11 @@
               </li>
               <li class="hero-list-item">
                 <div class="hero-info-card">
-                  <img class="hero-info-img" src="#" alt="" />
+                  <img
+                    class="hero-info-img"
+                    src="./images/hero-icon.png"
+                    alt=""
+                  />
                   <p class="hero-text">
                     Мінімальне <br />
                     замовлення -
@@ -85,7 +103,11 @@
               </li>
               <li class="hero-list-item">
                 <div class="hero-info-card">
-                  <img class="hero-info-img" src="#" alt="" />
+                  <img
+                    class="hero-info-img"
+                    src="./images/hero-icon.png"
+                    alt=""
+                  />
                   <p class="hero-text">
                     Основна оплата <br />
                     <span style="font-weight: 600"> при отриманні</span>
@@ -94,7 +116,11 @@
               </li>
               <li class="hero-list-item">
                 <div class="hero-info-card">
-                  <img class="hero-info-img" src="#" alt="" />
+                  <img
+                    class="hero-info-img"
+                    src="./images/hero-icon.png"
+                    alt=""
+                  />
                   <p class="hero-text">
                     Виконання <br />
                     <span style="font-weight: 600">3-7 днів</span>
@@ -103,11 +129,15 @@
               </li>
             </ul>
           </div>
-          <button class="hero-button">РОЗРАХУВАТИ ВАРТІСТЬ</button>
+          <button class="hero-button">
+            <a href="#anketa" style="color: white; width: 100%; display: block"
+              >РОЗРАХУВАТИ ВАРТІСТЬ</a
+            >
+          </button>
         </div>
       </div>
     </section>
-    <section class="materials-section">
+    <section class="materials-section" id="materials">
       <div class="container">
         <h2 class="materials-title">
           ПИЛЯЄМО МАТЕРІАЛИ СТАНДАРТНОГО <br />
@@ -122,7 +152,13 @@
                 class="product-card-img"
               />
               <p class="product-card-desc">ДОШКА ОБРІЗНА</p>
-              <button class="order-btn">ЗАМОВИТИ</button>
+              <button class="order-btn">
+                <a
+                  href="#anketa"
+                  style="color: white; width: 100%; display: block"
+                  >ЗАМОВИТИ</a
+                >
+              </button>
             </li>
             <li class="product-card">
               <img
@@ -131,7 +167,13 @@
                 class="product-card-img"
               />
               <p class="product-card-desc">БРУС</p>
-              <button class="order-btn">ЗАМОВИТИ</button>
+              <button class="order-btn">
+                <a
+                  href="#anketa"
+                  style="color: white; width: 100%; display: block"
+                  >ЗАМОВИТИ</a
+                >
+              </button>
             </li>
             <li class="product-card">
               <img
@@ -140,7 +182,13 @@
                 class="product-card-img"
               />
               <p class="product-card-desc">БРУСОК</p>
-              <button class="order-btn">ЗАМОВИТИ</button>
+              <button class="order-btn">
+                <a
+                  href="#anketa"
+                  style="color: white; width: 100%; display: block"
+                  >ЗАМОВИТИ</a
+                >
+              </button>
             </li>
             <li class="product-card">
               <img
@@ -149,7 +197,13 @@
                 class="product-card-img"
               />
               <p class="product-card-desc">РЕЙКА</p>
-              <button class="order-btn">ЗАМОВИТИ</button>
+              <button class="order-btn">
+                <a
+                  href="#anketa"
+                  style="color: white; width: 100%; display: block"
+                  >ЗАМОВИТИ</a
+                >
+              </button>
             </li>
             <li class="product-card">
               <img
@@ -158,7 +212,13 @@
                 class="product-card-img"
               />
               <p class="product-card-desc">СУХОСТІЙ</p>
-              <button class="order-btn">ЗАМОВИТИ</button>
+              <button class="order-btn">
+                <a
+                  href="#anketa"
+                  style="color: white; width: 100%; display: block"
+                  >ЗАМОВИТИ</a
+                >
+              </button>
             </li>
             <li class="product-card">
               <img
@@ -168,13 +228,19 @@
                 id="anketa"
               />
               <p class="product-card-desc">ВАГОНКА</p>
-              <button class="order-btn">ЗАМОВИТИ</button>
+              <button class="order-btn">
+                <a
+                  href="#anketa"
+                  style="color: white; width: 100%; display: block"
+                  >ЗАМОВИТИ</a
+                >
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="quiz-section">
+    <section class="quiz-section" id="quiz">
       <div class="container">
         <div class="quiz">
           <div class="form-container">
@@ -408,138 +474,8 @@
           </div>
         </div>
       </div>
-      <script>
-        let currentStep = 1;
-
-        function nextStep(step) {
-          document
-            .querySelector(`.step${currentStep}`)
-            .classList.remove('active');
-          currentStep = step;
-          updateStepCounter();
-          document.querySelector(`.step${currentStep}`).classList.add('active');
-        }
-        function prevStep(step) {
-          document
-            .querySelector(`.step${currentStep}`)
-            .classList.remove('active');
-          currentStep = step;
-          updateStepCounter();
-          document.querySelector(`.step${currentStep}`).classList.add('active');
-        }
-        function updateAreaValue(value) {
-          document.getElementById('areaValue').innerText = value;
-        }
-        function updateStepCounter() {
-          document.getElementById(
-            'stepCounter'
-          ).innerText = `Крок ${currentStep}/4`;
-        }
-        function submitForm() {
-          // Отримайте значення з форми і обробіть їх за потреби
-          const formData = {
-            name: document.getElementById('name').value,
-            phone: document.getElementById('phone').value,
-            material: document.querySelector('input[name="material"]:checked')
-              .value,
-            area: document.getElementById('areaRange').value,
-            systems: document.getElementById('oblast').value,
-            // workTypes: Array.from(
-            //     document.querySelectorAll('input[name="workTypes"]:checked')
-            // ).map(input => input.value),
-          };
-          // Отримати токен та чат_id зі свого бота в телеграмі
-          const TOKEN = '6329427978:AAFOj3i01rpAlPlFMIO-yGx_nLjMnKjysjk';
-          const CHAT_ID = '-1002109092194';
-          const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-          // Створити текстовий повідомлення з отриманими даними
-          let message = `Заявка з сайту!\n\n`;
-          message += `Ім'я: ${formData.name}\n`;
-          message += `Номер телефону: ${formData.phone}\n`;
-          message += `Пиломатеріал: ${formData.material}\n`;
-          message += `Кількість кубів: ${formData.area}\n`;
-          message += `Область: ${formData.systems}\n`;
-          // message += `Типи робіт: ${formData.workTypes.join(', ')}\n`;
-          // Відправити повідомлення в телеграм
-          fetch(URL, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              chat_id: CHAT_ID,
-              parse_mode: 'html',
-              text: `${message}`,
-            }),
-          })
-            .then(response => {
-              window.location.href = 'thanks.html';
-              if (!response.ok) {
-                throw new Error('Network response was not ok');
-              }
-              // Очистити дані форми або виконати інші дії при необхідності
-              // Наприклад, ви можете перенаправити користувача на іншу сторінку
-              // або вивести повідомлення про успішну відправку
-              document.getElementById('areaRange').value = 0; // Скинути значення площі
-              document
-                .querySelectorAll('input[name="objectType"]')
-                .forEach(input => (input.checked = false));
-              document
-                .querySelectorAll('input[name="systems"]')
-                .forEach(input => (input.checked = false));
-              document
-                .querySelectorAll('input[name="workTypes"]')
-                .forEach(input => (input.checked = false));
-              hideAllSteps();
-              resetForm(); // Очистити форму або виконати інші дії
-              currentStep = 1;
-              updateStepCounter();
-              document.querySelector('.step1').classList.add('active');
-            })
-            .catch(error => {
-              console.log(error);
-            });
-        }
-        function resetForm() {
-          // Очистити дані форми або виконати інші дії для скидання форми
-          document.getElementById('areaRange').value = 0;
-          document
-            .querySelectorAll('input[name="objectType"]')
-            .forEach(input => (input.checked = false));
-          document
-            .querySelectForAll('input[name="systems"]')
-            .forEach(input => (input.checked = false));
-          document
-            .querySelectorAll('input[name="workTypes"]')
-            .forEach(input => (input.checked = false));
-        }
-        function hideAllSteps() {
-          // Приховати всі кроки форми
-          const formSteps = document.querySelectorAll('.form-step');
-          formSteps.forEach(step => {
-            step.classList.remove('active');
-          });
-        }
-        document.addEventListener('DOMContentLoaded', function () {
-          const quizImages = document.querySelectorAll('.quiz-img');
-          quizImages.forEach(function (image) {
-            image.addEventListener('click', function () {
-              if (currentStep === 1) {
-                // Якщо це перший крок, обирайте тільки одне фото
-                quizImages.forEach(function (otherImage) {
-                  otherImage.classList.remove('selected');
-                });
-                image.classList.add('selected');
-              } else if (currentStep === 3 || currentStep === 4) {
-                // Якщо це третій або четвертий крок, дозвольте обирати декілька фото
-                image.classList.toggle('selected');
-              }
-            });
-          });
-        });
-      </script>
     </section>
-    <section class="garant-section">
+    <section class="garant-section" id="garant">
       <div class="container">
         <h2 class="garant-title">
           <span style="font-weight: 600">4 ГАРАНТІЇ</span> НА ВСІ ВИРОБИ
@@ -551,50 +487,85 @@
               Вироби проходять контроль розміру, <br />
               геометрії, наявності хвиль.
             </p>
-            <img src="#" alt="" />
+            <img
+              class="grant-main-img"
+              src="./images/garant/garant-main.png"
+              alt=""
+            />
           </div>
           <div class="garant-card-container">
             <ul class="card-list">
               <li class="card-item">
-                <p class="card-title">Виконання 3-7 <br />днів</p>
+                <p class="card-title" style="font-weight: 600">
+                  Виконання 3-7 днів
+                </p>
                 <p class="card-info">
                   Дотримуємося термінів, фуру(30 кубів) готуємо від 3 до 7 днів.
                   При попутному вантажі до 3 тижнів
                 </p>
+                <div class="info-img-cont p-t">
+                  <img
+                    class="card-img"
+                    src="./images/garant/3-7days.png"
+                    alt=""
+                  />
+                </div>
               </li>
               <li class="card-item">
-                <p class="card-title">Індивідуальні <br />розміри</p>
+                <p class="card-title" style="font-weight: 600">
+                  Індивідуальні розміри
+                </p>
                 <p class="card-info">
                   Пиляємо матеріали стандартного чи потрібного вам розміру
                 </p>
+                <div class="info-img-cont">
+                  <img class="card-img" src="./images/garant/rozm.png" alt="" />
+                </div>
               </li>
               <li class="card-item">
-                <p class="card-title">Зручний <br />спосіб оплати</p>
+                <p class="card-title" style="font-weight: 600">
+                  Зручний спосіб оплати
+                </p>
                 <p class="card-info">
                   Готівковий чи безготівковий вибір, без/з ПДВ
                 </p>
+                <div class="info-img-cont">
+                  <img class="card-img" src="./images/garant/pay.png" alt="" />
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="question-section">
+    <section class="question-section" id="contacts">
       <div class="container">
         <ul class="quest-list">
           <li class="quest-item">
-            <h3>ЗАЛИШИЛИСЯ<br />ПИТАННЯ?</h3>
-            <p>Сміливо дзвоніть!</p>
-            <p>Пн-Чт 9:00-18:00, Пт 9:00-15:00</p>
-            <a href="" class="schedule-phone">+38(063) 996-83-55</a>
+            <h3 class="quest-title">ЗАЛИШИЛИСЯ ПИТАННЯ?</h3>
+            <p
+              style="
+                color: #414140;
+                margin-bottom: 10px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 17px;
+              "
+            >
+              Сміливо дзвоніть!
+            </p>
+            <p class="quest-schedule">Пн-Чт 9:00-18:00, Пт 9:00-15:00</p>
+            <a href="" class="schedule-phone" style="color: #414140"
+              >+38(063) 996-83-55</a
+            >
             <div class="quest-socials">
-              <p>Або пишіть<br />у месенджері</p>
-              <img src="#" alt="" />
-              <img src="#" alt="" />
-              <img src="#" alt="" />
+              <p class="quest-soc-mess">Або пишіть<br />у месенджері</p>
+              <img src="./images/viber.png" alt="" width="35" height="35" />
+              <img src="./images/telegram.png" alt="" width="35" height="35" />
+              <img src="./images/messenger.png" alt="" width="35" height="35" />
             </div>
           </li>
-          <li class="quest-item">
+          <li class="quest-item d-n">
             <p>
               <img src="#" alt="" /> Наше виробництво <br />
               знаходиться в Коростишеві, <br />
@@ -605,9 +576,9 @@
           <li class="quest-item">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621903.4605336464!2d23.908272149999995!3d50.07781249974592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c8229b2b23679%3A0xd041bce097c6b471!2z0JrQvtGA0L7RgdGC0LjRiNGW0LIsINCW0LjRgtC-0LzQuNGA0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDEyNTAw!5e0!3m2!1suk!2sua!4v1705038503937!5m2!1suk!2sua"
-              width="200"
-              height="200"
-              style="border: 0"
+              width="100%"
+              height="100%"
+              style="border: 0; border-radius: 8px"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -619,6 +590,7 @@
     <footer class="footer">
       <p>Політика конфіденційності<br />Всі права захищені</p>
     </footer>
-    <!-- <script src="./js/quiz.js"></script> -->
+    <script src="./js/quiz.js"></script>
+    <script src="./js/ham-menu.js"></script>
   </body>
 </html>

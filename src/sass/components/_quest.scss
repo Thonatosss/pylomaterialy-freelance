@@ -1,0 +1,38 @@
+.quest-title {
+  text-align: center;
+  font-size: 22px;
+  color: #414140;
+  margin-bottom: 10px;
+}
+.question-section {
+  padding-top: 50px;
+}
+.quest-schedule {
+  font-weight: 400;
+  color: #414140;
+  font-size: 9px;
+}
+.quest-item {
+  text-align: center;
+}
+.quest-socials {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+  gap: 10px;
+}
+.quest-soc-mess {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.d-n {
+  display: none;
+}
+.footer {
+  margin-top: 20px;
+  padding: 40px 0 40px 0;
+  background: #414140;
+  text-align: center;
+  color: white;
+}

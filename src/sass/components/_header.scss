@@ -1,14 +1,25 @@
-.schedule-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-right: 20px;
+.schedule-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
 }
-.schedule-text{
-    font-size: 10px;
+.schedule-text {
+  font-size: 10px;
 }
-.schedule-phone{
-    color: black;
-    font-weight: 600;
+.schedule-phone {
+  color: black;
+  font-weight: 600;
+}
+.social-icon {
+  width: 35px;
+  height: 35px;
+}
+.social-list {
+  margin-top: 5px;
+  display: flex;
+  //   justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

@@ -97,7 +97,6 @@ body.menu-open {
   transition-duration: 0.25s;
 }
 
-
 .mobile-ham-container {
   display: flex;
   justify-content: space-between;
@@ -105,8 +104,10 @@ body.menu-open {
   height: 70px;
   width: 100%;
   padding: 0 10px;
-  background-color: #fff;
-  
+  // background-color: #fff;
+  // backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.9);
+
   position: fixed;
   z-index: 30;
   top: 0;

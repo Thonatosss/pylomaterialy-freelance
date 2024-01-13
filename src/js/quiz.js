@@ -1,3 +1,4 @@
+
 let currentStep = 1;
 
 function nextStep(step) {
@@ -6,9 +7,7 @@ function nextStep(step) {
         .classList.remove('active');
     currentStep = step;
     updateStepCounter();
-    document
-        .querySelector(`.step${currentStep}`)
-        .classList.add('active');
+    document.querySelector(`.step${currentStep}`).classList.add('active');
 }
 function prevStep(step) {
     document
@@ -16,9 +15,7 @@ function prevStep(step) {
         .classList.remove('active');
     currentStep = step;
     updateStepCounter();
-    document
-        .querySelector(`.step${currentStep}`)
-        .classList.add('active');
+    document.querySelector(`.step${currentStep}`).classList.add('active');
 }
 function updateAreaValue(value) {
     document.getElementById('areaValue').innerText = value;
@@ -33,9 +30,8 @@ function submitForm() {
     const formData = {
         name: document.getElementById('name').value,
         phone: document.getElementById('phone').value,
-        material: document.querySelector(
-            'input[name="material"]:checked'
-        ).value,
+        material: document.querySelector('input[name="material"]:checked')
+            .value,
         area: document.getElementById('areaRange').value,
         systems: document.getElementById('oblast').value,
         // workTypes: Array.from(
@@ -43,15 +39,15 @@ function submitForm() {
         // ).map(input => input.value),
     };
     // Отримати токен та чат_id зі свого бота в телеграмі
-    const TOKEN = '6956288167:AAHuR7oOShLoxF1MEcaLUOj_gk_TouvRYIo';
-    const CHAT_ID = '-1001533686542';
+    const TOKEN = '6329427978:AAFOj3i01rpAlPlFMIO-yGx_nLjMnKjysjk';
+    const CHAT_ID = '-1002109092194';
     const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
     // Створити текстовий повідомлення з отриманими даними
     let message = `Заявка з сайту!\n\n`;
     message += `Ім'я: ${formData.name}\n`;
     message += `Номер телефону: ${formData.phone}\n`;
     message += `Пиломатеріал: ${formData.material}\n`;
-    message += `Кількість кубів: ${formData.area} м3\n`;
+    message += `Кількість кубів: ${formData.area}\n`;
     message += `Область: ${formData.systems}\n`;
     // message += `Типи робіт: ${formData.workTypes.join(', ')}\n`;
     // Відправити повідомлення в телеграм
