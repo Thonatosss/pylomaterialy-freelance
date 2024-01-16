@@ -59,3 +59,22 @@
     width: 100%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .materials-title {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+  .product-card-img {
+    width: 240px;
+    height: 200px;
+  }
+  .product-card-desc {
+    font-size: 20px;
+  }
+  .order-btn {
+    height: 60px;
+    font-size: 18px;
+    width: 60%;
+    margin-top: 20px;
+  }
+}

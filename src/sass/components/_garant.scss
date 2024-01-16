@@ -112,3 +112,26 @@
     width: 300px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .card-item {
+    width: 49%;
+  }
+  .card-title,
+  .main-card-strong {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .card-img,
+  .grant-main-img {
+    width: 200px;
+    height: auto;
+  }
+  .main-card-text,
+  .card-info {
+    font-size: 14px;
+  }
+  .terminal-img {
+    width: 280px;
+    height: auto;
+  }
+}

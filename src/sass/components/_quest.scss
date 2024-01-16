@@ -36,3 +36,30 @@
   text-align: center;
   color: white;
 }
+@media screen and (min-width: 1200px) {
+  .quest-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .quest-title {
+    font-size: 30px;
+  }
+  .quest-schedule {
+    font-size: 14px;
+  }
+  .mb15 {
+    margin-bottom: 15px;
+  }
+  .schedule-phone {
+    font-size: 18px;
+  }
+  .quest-soc-mess {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .mess-link:hover {
+    cursor: pointer;
+  }
+}
