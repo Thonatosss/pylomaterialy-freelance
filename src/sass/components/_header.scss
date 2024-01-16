@@ -53,6 +53,12 @@
   color: black;
   font-weight: 600;
   font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-nav:hover {
+  color: #78aa67; /* Новий колір при наведенні */
 }
 .page-header {
   position: fixed;
@@ -63,5 +69,13 @@
 @media screen and (min-width: 1200px) {
   .page-header {
     display: block;
+  }
+}
+.header-mess {
+  transition: transform 0.3s ease;
+}
+.mes-link {
+  &:hover {
+    transform: translateY(-5px);
   }
 }

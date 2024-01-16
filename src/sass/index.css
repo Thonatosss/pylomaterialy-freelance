@@ -276,6 +276,12 @@ body.menu-open {
   color: black;
   font-weight: 600;
   font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-nav:hover {
+  color: #78aa67; /* Новий колір при наведенні */
 }
 
 .page-header {
@@ -290,6 +296,14 @@ body.menu-open {
     display: block;
   }
 }
+.header-mess {
+  transition: transform 0.3s ease;
+}
+
+.mes-link:hover {
+  transform: translateY(-5px);
+}
+
 .hero-section {
   padding-top: 100px;
   background-image: url("/src/images/hero-background.jpg");
@@ -353,6 +367,10 @@ body.menu-open {
   margin-bottom: 30px;
   font-weight: 600;
   text-align: center;
+  transition: transform 0.5s ease;
+}
+.hero-button:hover {
+  transform: translateY(-5px);
 }
 
 .hero-info-img {
@@ -506,6 +524,13 @@ body.menu-open {
     margin-top: 20px;
   }
 }
+.order-btn {
+  transition: transform 0.3s ease;
+}
+.order-btn:hover {
+  transform: translateY(-5px);
+}
+
 .form-container {
   /* width: 900px; */
   height: 100%;

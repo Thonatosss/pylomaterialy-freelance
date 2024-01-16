@@ -56,7 +56,12 @@
   margin-bottom: 30px;
   font-weight: 600;
   text-align: center;
+  transition: transform 0.5s ease;
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
+
 .hero-info-img {
   width: 32px;
   height: 32px;
