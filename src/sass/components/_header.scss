@@ -71,11 +71,3 @@
     display: block;
   }
 }
-.header-mess {
-  transition: transform 0.3s ease;
-}
-.mes-link {
-  &:hover {
-    transform: translateY(-5px);
-  }
-}
