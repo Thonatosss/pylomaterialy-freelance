@@ -64,6 +64,11 @@ function submitForm() {
     })
         .then(response => {
             window.location.href = 'index.html';
+            formData.area = '';
+            formData.material = '';
+            formData.name = '';
+            formData.phone = '';
+            formData.systems = '';
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
