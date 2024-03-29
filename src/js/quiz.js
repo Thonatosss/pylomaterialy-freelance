@@ -63,13 +63,11 @@ function submitForm() {
         }),
     })
         .then(response => {
-            window.location.href = 'thanks.html';
+            window.location.href = 'index.html';
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            // Очистити дані форми або виконати інші дії при необхідності
-            // Наприклад, ви можете перенаправити користувача на іншу сторінку
-            // або вивести повідомлення про успішну відправку
+
             document.getElementById('areaRange').value = 0; // Скинути значення площі
             document
                 .querySelectorAll('input[name="objectType"]')
