@@ -7,6 +7,24 @@ function nextStep(step) {
         .classList.remove('active');
     currentStep = step;
     updateStepCounter();
+    let location = document.getElementById('oblast');
+    let locationValue = location.value;
+    let areaRange = document.getElementById('areaRange')
+
+    if (locationValue=== 'Ternopil'|| locationValue=== 'Zakarpattia'|| locationValue=== 'Volyn'){
+        areaRange.min = '10';
+        areaRange.value = '10';
+        areaRange.max = '30'
+        document.getElementById('areaValue').innerText = '10';
+        
+    }
+    if (locationValue=== 'Lviv'){
+        areaRange.min = '1';
+        areaRange.value = '1';
+        areaRange.max = '30'
+        document.getElementById('areaValue').innerText = '1';
+        
+    }
     document.querySelector(`.step${currentStep}`).classList.add('active');
 }
 function prevStep(step) {

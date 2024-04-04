@@ -258,21 +258,7 @@
                 >
               </button>
             </li>
-            <!-- <li class="product-card">
-              <img
-                src="./src/images/materials/suho.jpeg"
-                alt=""
-                class="product-card-img"
-              />
-              <p class="product-card-desc">СУХОСТІЙ</p>
-              <button class="order-btn">
-                <a
-                  href="#anketa"
-                  style="color: white; width: 100%; display: block; font-family: 'Montserrat', sans-serif;"
-                  >ЗАМОВИТИ</a
-                >
-              </button>
-            </li> -->
+            .
             <!-- <li class="product-card">
               <img
                 src="./images/materials/vagonka.png"
@@ -387,9 +373,9 @@
                       <input
                         type="radio"
                         name="material"
-                        value="Дошка підлоги"
+                        value="Пиломатеріал(все для даху)"
                       />
-                      <span class="photo-span">Дошка підлоги</span>
+                      <span class="photo-span">Пиломатеріал(все для даху)</span>
                     </div>
                   </label>
                 </div>
@@ -404,50 +390,11 @@
                 </a>
               </div>
               <!-- Крок 2 -->
-              <div class="steps-container" id="second-step">
-                <div class="form-step step2">
-                  <h2 class="form-title">Скільки кубів потрібно?</h2>
-                  <div
-                    class="range-info-container"
-                    style="font-size: 16px; font-weight: 600"
-                  >
-                    <span id="areaValue">0</span>
-                    м3
-                  </div>
-                  <input
-                    class="range-input"
-                    type="range"
-                    id="areaRange"
-                    min="1"
-                    max="10"
-                    value="0"
-                    step="1"
-                    oninput="updateAreaValue(this.value)"
-                  />
-                  <div class="buttons-container">
-                    <button
-                      class="btn form-btn"
-                      onclick="prevStep(1)"
-                      type="button"
-                    >
-                      Назад
-                    </button>
-                    <button
-                      class="btn form-btn"
-                      onclick="nextStep(3)"
-                      type="button"
-                    >
-                      Далі
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Крок 3 -->
               <div class="steps-container">
-                <div class="form-step step3">
-                  <h2 class="form-title">Які типи систем цікавлять?</h2>
+                <div class="form-step step2">
+                  <h2 class="form-title">Оберіть область:</h2>
                   <div class="labels-container fd">
-                    <label for="oblast">Оберіть область:</label>
+                    
                     <select id="oblast" name="oblast">
                       <option value="Vinnytsia">Вінницька область</option>
                       <option value="Volyn">Волинська область</option>
@@ -479,6 +426,46 @@
                       <option value="Chernihiv">Чернігівська область</option>
                     </select>
                   </div>
+                  <div class="buttons-container">
+                    <button
+                      class="btn form-btn"
+                      onclick="prevStep(1)"
+                      type="button"
+                    >
+                      Назад
+                    </button>
+                    <button
+                      class="btn form-btn"
+                      onclick="nextStep(3)"
+                      type="button"
+                    >
+                      Далі
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Крок 3 -->
+              <div class="steps-container">
+                <div class="form-step step3">
+                  <h2 class="form-title">Скільки кубів потрібно?</h2>
+                  <div
+                    class="range-info-container"
+                    style="font-size: 16px; font-weight: 600"
+                  >
+                    <span id="areaValue">7</span>
+                    м3
+                  </div>
+                  <input
+                    class="range-input"
+                    type="range"
+                    id="areaRange"
+                    min="7"
+                    max="30"
+                    value="7"
+                    step="1"
+                    oninput="updateAreaValue(this.value)"
+                  />
+                  
                   <div class="buttons-container">
                     <button
                       class="btn form-btn"
